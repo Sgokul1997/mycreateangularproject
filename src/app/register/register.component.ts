@@ -5,14 +5,14 @@ import { Observable } from 'rxjs/Rx';
 import { Router } from '@angular/router';
 import { RegisterService } from './register.service';
 import swal from 'sweetalert2'
-
+/*
 export interface User {
   user_name: string;
   email: string;
   password: string;
   phone_number: string;
 }
-
+*/
 
 @Component({
   selector: 'app-register',
@@ -22,20 +22,19 @@ export interface User {
 export class RegisterComponent implements OnInit {
 register : any = {};
 //reg : any;
-data:any;
+//data:any;
 user: any;
   constructor(private router:Router,private reg:RegisterService) { }
 
   ngOnInit() {
-
-
-   this.reg.userstatus(this.registe).subscribe( res => {
+/*
+  this.reg.userstatus().subscribe( res => {
     this.user = res;
        console.log(this.user)
    },
 
    );
-
+*/
 
 
   }
@@ -43,8 +42,8 @@ user: any;
 
 registersave(){
 
-   console.log(this.register);
-//this.data = {"user_name": this.user_name,"email": this.email,"password": this.password,"phone_number": this.phone_number}
+  console.log(this.register);
+  //this.data = {"user_name": this.user_name,"email": this.email,"password": this.password,"phone_number": this.phone_number}
  
    this.reg.userregister(this.register).subscribe( res => {
     this.user = res;

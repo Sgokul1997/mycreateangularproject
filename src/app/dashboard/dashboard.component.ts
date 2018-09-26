@@ -16,26 +16,14 @@ export class DashboardComponent implements OnInit {
   constructor(private router:Router,private dash:DashboardService) { }
 
   ngOnInit() {
-
-
-
-   this.dash.userstatus(this.registe).subscribe( res => {
+   /* this.dash.userstatus().subscribe( res => {
     this.user = res;
        console.log(this.user)
    },
 
-   );
-
-
-
+   );*/
 
   }
-/*this.dash.userstatus().subscribe( res => {
-   this.review = res;
-   console.log(this.review);
-   
-  
-   })
-*/
+
 
 }

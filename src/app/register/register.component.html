@@ -9,7 +9,8 @@
 <div class="container">
 
 
-   
+     <div *ngFor="let use of user">{{use.email}}
+     {{use.name}}</div>
 
 <article class="card-body mx-auto" style="max-width: 400px;">
     <h4 class="card-title mt-3 text-center">Create Account</h4>
@@ -19,7 +20,13 @@
         <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fa fa-user"></i> </span>
          </div>
-        <input name="name" class="form-control" placeholder="Full name" type="text" [(ngModel)]="register.user_name">
+        <input name="name" class="form-control" placeholder="Full name" type="text" [(ngModel)]="register.first_name">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+         </div>
+        <input name="name" class="form-control" placeholder="Full name" type="text" [(ngModel)]="register.last_name">
     </div> <!-- form-group// -->
     <div class="form-group input-group">
         <div class="input-group-prepend">

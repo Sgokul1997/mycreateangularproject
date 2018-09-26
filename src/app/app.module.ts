@@ -22,6 +22,7 @@ import { RegisterService } from './register/register.service';
 import { ForgetService } from './forget/forget.service';
 import { DashboardService } from './dashboard/dashboard.service';
 import { ViewService } from './view/view.service';
+import { TestpageService } from './testpage/testpage.service';
 
 
 //List Of Modules
@@ -31,6 +32,7 @@ import { RegisterComponent } from './register/register.component';
 import { ForgetComponent } from './forget/forget.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ViewComponent } from './view/view.component';
+import { TestpageComponent } from './testpage/testpage.component';
 
 
 
@@ -46,7 +48,8 @@ import { ViewComponent } from './view/view.component';
     RegisterComponent,
     ForgetComponent,
     DashboardComponent,
-    ViewComponent
+    ViewComponent,
+    TestpageComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +68,8 @@ import { ViewComponent } from './view/view.component';
   RegisterService,
   ForgetService,
   DashboardService,
-  ViewService
+  ViewService,
+  TestpageService
 
 
 
